@@ -1,0 +1,8 @@
+Copyright (c) 2026 Cinema Garden. All rights reserved.
+
+This website, its source code, design, text, images and data are the property of Cinema Garden.
+No licence is granted. You may not copy, modify, distribute, republish, scrape, or use any part of
+it, including to train, fine-tune or ground any machine-learning or AI system, without written
+permission from Cinema Garden.
+
+The code is published here only so that GitHub Pages can serve the demo, and it is encrypted.

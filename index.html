@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cinema Garden</title><meta name="theme-color" content="#151021">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex, noai, noimageai">
+<meta name="copyright" content="Copyright (c) 2026 Cinema Garden. All rights reserved.">
+<style>
+  html,body{margin:0;height:100%;background:#151021;color:#f6f0ff;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+  main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;box-sizing:border-box}
+  h1{font-weight:700;font-size:1.6rem;margin:0;letter-spacing:.01em} p{margin:0;max-width:30em;color:#cfc4e6}
+  .dot{width:14px;height:14px;border-radius:50%;background:#e8b64c;animation:p 1.2s ease-in-out infinite}
+  @keyframes p{50%{opacity:.25;transform:scale(.7)}}
+  form{display:none;flex-direction:column;gap:10px;width:100%;max-width:320px}
+  .field{position:relative}
+  input{font:inherit;width:100%;box-sizing:border-box;padding:12px 76px;border-radius:12px;border:1px solid #4a3d66;background:#1f1830;color:inherit;text-align:center}
+  .field button.peek{position:absolute;right:6px;top:50%;transform:translateY(-50%);padding:6px 10px;border-radius:8px;background:transparent;color:#cfc4e6;font-size:14px;font-weight:600;display:flex;align-items:center;gap:6px}
+  .field button.peek:hover,.field button.peek:focus-visible{background:#2c2342;color:#f6f0ff}
+  .field button.peek svg{width:18px;height:18px}
+  button{font:inherit;font-weight:600;padding:12px 14px;border-radius:12px;border:0;background:#e8b64c;color:#1a1326;cursor:pointer}
+  button:disabled{opacity:.6;cursor:default}
+  .err{color:#ff9aa8;min-height:1.5em}
+  footer{position:fixed;bottom:12px;left:0;right:0;text-align:center;font-size:12px;color:#8f84a8}
+</style></head>
+<body><main><div class="dot" id="dot"></div><h1>Cinema Garden</h1><p id="msg">Opening the demo…</p>
+<form id="unlock" autocomplete="off"><div class="field"><input id="code" type="password" placeholder="Access code" aria-label="Access code" autocapitalize="none" spellcheck="false" required>
+<button class="peek" id="peek" type="button" aria-label="Show the code" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path id="peekSlash" d="M4 4l16 16" style="display:none"/></svg><span id="peekText">Show</span></button></div>
+<button id="go" type="submit">Open the demo</button><p class="err" id="err"></p></form></main>
+<footer>© 2026 Cinema Garden. All rights reserved.</footer>
+<script src="/demo-start.js"></script></body></html>
